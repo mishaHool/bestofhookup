@@ -10,693 +10,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/img/ico.jpg" type="image/png">
-    <style id="generate-style-inline-css" type="text/css">
-        body {
-            background-color: #000000;
-            color: #ffffff;
-        }
-        
-        a,
-        a:visited {
-            color: #ffffff;
-        }
-        
-        a:hover,
-        a:focus,
-        a:active {
-            color: #5ddee8;
-        }
-        
-        body .grid-container {
-            max-width: 1100px;
-        }
-        
-        .wp-block-group__inner-container {
-            max-width: 1100px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        body,
-        button,
-        input,
-        select,
-        textarea {
-            font-family: "Amaranth", sans-serif;
-            font-size: 19px;
-        }
-        
-        body {
-            line-height: 1.7;
-        }
-        
-        p {
-            margin-bottom: 1.2em;
-        }
-        
-        .entry-content>[class*="wp-block-"]:not(:last-child) {
-            margin-bottom: 1.2em;
-        }
-        
-        .main-title {
-            font-family: "Amaranth", sans-serif;
-            font-weight: 700;
-            font-size: 25px;
-        }
-        
-        .main-navigation a,
-        .menu-toggle {
-            font-family: "PT Sans Narrow", sans-serif;
-            font-weight: 500;
-            text-transform: uppercase;
-            font-size: 18px;
-        }
-        
-        .main-navigation .main-nav {
-            font-size: 15px;
-        }
-        
-        .widget-title {
-            font-size: 23px;
-            margin-bottom: 20px;
-        }
-        
-        h1 {
-            font-family: "Amaranth", sans-serif;
-            font-weight: 700;
-            font-size: 46px;
-            line-height: 0.8em;
-            margin-bottom: 54px;
-            width: 1250px;
-            margin: auto;
-        }
-        
-        h2 {
-            font-family: "Amaranth", sans-serif;
-            font-weight: 600;
-            font-size: 33px;
-        }
-        
-        h3 {
-            font-family: "Amaranth", sans-serif;
-            font-weight: 600;
-            font-size: 28px;
-        }
-        
-        .site-info {
-            font-size: 16px;
-        }
-        
-        @media (max-width:768px) {
-            .main-title {
-                font-size: 20px;
-            }
-            h1 {
-                font-size: 30px;
-            }
-            h2 {
-                font-size: 25px;
-            }
-        }
-        
-        .top-bar {
-            background-color: #636363;
-            color: #ffffff;
-        }
-        
-        .top-bar a,
-        .top-bar a:visited {
-            color: #ffffff;
-        }
-        
-        .top-bar a:hover {
-            color: #303030;
-        }
-        
-        .site-header {
-            background-color: #ffffff;
-            color: #3a3a3a;
-        }
-        
-        .site-header a,
-        .site-header a:visited {
-            color: #3a3a3a;
-        }
-        
-        .main-title a,
-        .main-title a:hover,
-        .main-title a:visited {
-            color: #ffffff;
-        }
-        
-        .site-description {
-            color: #757575;
-        }
-        
-        .main-navigation,
-        .main-navigation ul ul {
-            background-color: #000000;
-        }
-        
-        .main-navigation .main-nav ul li a,
-        .menu-toggle {
-            color: #ffffff;
-        }
-        
-        .main-navigation .main-nav ul li:hover>a,
-        .main-navigation .main-nav ul li:focus>a,
-        .main-navigation .main-nav ul li.sfHover>a {
-            color: #5ddee8;
-            background-color: #000000;
-        }
-        
-        button.menu-toggle:hover,
-        button.menu-toggle:focus,
-        .main-navigation .mobile-bar-items a,
-        .main-navigation .mobile-bar-items a:hover,
-        .main-navigation .mobile-bar-items a:focus {
-            color: #ffffff;
-        }
-        
-        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
-            color: #5ddee8;
-            background-color: #000000;
-        }
-        
-        .main-navigation .main-nav ul li[class*="current-menu-"]>a:hover,
-        .main-navigation .main-nav ul li[class*="current-menu-"].sfHover>a {
-            color: #5ddee8;
-            background-color: #000000;
-        }
-        
-        .navigation-search input[type="search"],
-        .navigation-search input[type="search"]:active,
-        .navigation-search input[type="search"]:focus,
-        .main-navigation .main-nav ul li.search-item.active>a {
-            color: #5ddee8;
-            background-color: #000000;
-        }
-        
-        .main-navigation ul ul {
-            background-color: #3f3f3f;
-        }
-        
-        .main-navigation .main-nav ul ul li a {
-            color: #ffffff;
-        }
-        
-        .main-navigation .main-nav ul ul li:hover>a,
-        .main-navigation .main-nav ul ul li:focus>a,
-        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a:hover,
-        .separate-containers .inside-article,
-        .separate-containers .comments-area,
-        .separate-containers .page-header,
-        .one-container .container,
-        .separate-containers .paging-navigation,
-        .inside-page-header {
-            color: #c4c4c4;
-            background-color: #201f1d;
-        }
-        
-        .inside-article a,
-        .inside-article a:visited,
-        .paging-navigation a,
-        .paging-navigation a:visited,
-        .comments-area a,
-        .comments-area a:visited,
-        .page-header a,
-        .page-header a:visited {
-            color: #ffffff;
-        }
-        
-        .inside-article a:hover,
-        .paging-navigation a:hover,
-        .comments-area a:hover,
-        .page-header a:hover {
-            color: #5ddee8;
-        }
-        
-        .entry-title a,
-        .entry-title a:visited {
-            color: #ffffff;
-        }
-        
-        .entry-title a:hover {
-            color: #5ddee8;
-        }
-        
-        .entry-meta {
-            color: #ffffff;
-        }
-        
-        .entry-meta a,
-        .entry-meta a:visited {
-            color: #ffffff;
-        }
-        
-        .entry-meta a:hover {
-            color: #5ddee8;
-        }
-        
-        h1 {
-            color: #ffffff;
-        }
-        
-        h2 {
-            color: #ffffff;
-        }
-        
-        h3 {
-            color: #ffffff;
-        }
-        
-        .sidebar .widget {
-            background-color: #201f1d;
-        }
-        
-        .sidebar .widget .widget-title {
-            color: #ffffff;
-        }
-        
-        .footer-widgets {
-            background-color: #000000;
-        }
-        
-        .footer-widgets a,
-        .footer-widgets a:visited {
-            color: #ffffff;
-        }
-        
-        .footer-widgets a:hover {
-            color: #5ddee8;
-        }
-        
-        .footer-widgets .widget-title {
-            color: #000000;
-        }
-        
-        .site-info {
-            color: #ffffff;
-            background-color: #000000;
-        }
-        
-        .site-info a,
-        .site-info a:visited {
-            color: #ffffff;
-        }
-        
-        .site-info a:hover {
-            color: #606060;
-        }
-        
-        input[type="text"],
-        input[type="email"],
-        input[type="url"],
-        input[type="password"],
-        input[type="search"],
-        input[type="tel"],
-        input[type="number"],
-        textarea,
-        select {
-            color: #c9c9c9;
-            background-color: #424242;
-        }
-        
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        input[type="url"]:focus,
-        input[type="password"]:focus,
-        input[type="search"]:focus,
-        input[type="tel"]:focus,
-        input[type="number"]:focus,
-        textarea:focus,
-        select:focus {
-            color: #c9c9c9;
-            background-color: #424242;
-            border-color: #bfbfbf;
-        }
-        
-        button,
-        html input[type="button"],
-        input[type="reset"],
-        input[type="submit"],
-        a.button,
-        a.button:visited,
-        a.wp-block-button__link:not(.has-background) {
-            color: #5ddee8;
-            background-color: #201f1d;
-        }
-        
-        button:hover,
-        html input[type="button"]:hover,
-        input[type="reset"]:hover,
-        input[type="submit"]:hover,
-        a.button:hover,
-        button:focus,
-        html input[type="button"]:focus,
-        input[type="reset"]:focus,
-        input[type="submit"]:focus,
-        a.button:focus,
-        a.wp-block-button__link:not(.has-background):active,
-        a.wp-block-button__link:not(.has-background):focus,
-        a.wp-block-button__link:not(.has-background):hover {
-            color: #201f1d;
-            background-color: #5ddee8;
-        }
-        
-        .generate-back-to-top,
-        .generate-back-to-top:visited {
-            background-color: rgba( 0, 0, 0, 0.4);
-            color: #ffffff;
-        }
-        
-        .generate-back-to-top:hover,
-        .generate-back-to-top:focus {
-            background-color: rgba( 0, 0, 0, 0.6);
-            color: #ffffff;
-        }
-        
-        .entry-content .alignwide,
-        body:not(.no-sidebar) .entry-content .alignfull {
-            margin-left: -40px;
-            width: calc(100% + 80px);
-            max-width: calc(100% + 80px);
-        }
-        
-        .separate-containers .widget,
-        .separate-containers .site-main>*,
-        .separate-containers .page-header,
-        .widget-area .main-navigation {
-            margin-bottom: 23px;
-        }
-        
-        .separate-containers .site-main {
-            margin: 23px;
-        }
-        
-        .both-right.separate-containers .inside-left-sidebar {
-            margin-right: 11px;
-        }
-        
-        .both-right.separate-containers .inside-right-sidebar {
-            margin-left: 11px;
-        }
-        
-        .both-left.separate-containers .inside-left-sidebar {
-            margin-right: 11px;
-        }
-        
-        .both-left.separate-containers .inside-right-sidebar {
-            margin-left: 11px;
-        }
-        
-        .separate-containers .page-header-image,
-        .separate-containers .page-header-contained,
-        .separate-containers .page-header-image-single,
-        .separate-containers .page-header-content-single {
-            margin-top: 23px;
-        }
-        
-        .separate-containers .inside-right-sidebar,
-        .separate-containers .inside-left-sidebar {
-            margin-top: 23px;
-            margin-bottom: 23px;
-        }
-        
-        .main-navigation .main-nav ul li a,
-        .menu-toggle,
-        .main-navigation .mobile-bar-items a {
-            padding-left: 30px;
-            padding-right: 30px;
-            line-height: 52px;
-        }
-        
-        .main-navigation .main-nav ul ul li a {
-            padding: 10px 30px 10px 30px;
-        }
-        
-        .navigation-search input {
-            height: 52px;
-        }
-        
-        .rtl .menu-item-has-children .dropdown-menu-toggle {
-            padding-left: 30px;
-        }
-        
-        .menu-item-has-children .dropdown-menu-toggle {
-            padding-right: 30px;
-        }
-        
-        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
-            padding-right: 30px;
-        }
-        
-        .site-info {
-            padding: 10px;
-        }
-        
-        @media (max-width:768px) {
-            .separate-containers .inside-article,
-            .separate-containers .comments-area,
-            .separate-containers .page-header,
-            .separate-containers .paging-navigation,
-            .one-container .site-content,
-            .inside-page-header,
-            .wp-block-group__inner-container {
-                padding: 30px;
-            }
-            .entry-content .alignwide,
-            body:not(.no-sidebar) .entry-content .alignfull {
-                margin-left: -30px;
-                width: calc(100% + 60px);
-                max-width: calc(100% + 60px);
-            }
-        }
-        
-        .one-container .sidebar .widget {
-            padding: 0px;
-        }
-        /* End cached CSS */
-        
-        @media (max-width: 768px) {
-            .main-navigation .menu-toggle,
-            .main-navigation .mobile-bar-items,
-            .sidebar-nav-mobile:not(#sticky-placeholder) {
-                display: block;
-            }
-            .main-navigation ul,
-            .gen-sidebar-nav {
-                display: none;
-            }
-            [class*="nav-float-"] .site-header .inside-header>* {
-                float: none;
-                clear: both;
-            }
-        }
-        
-        button.menu-toggle:before,
-        .search-item a:before,
-        .dropdown-menu-toggle:before,
-        .cat-links:before,
-        .tags-links:before,
-        .comments-link:before,
-        .nav-previous .prev:before,
-        .nav-next .next:before,
-        .generate-back-to-top:before {
-            display: none;
-        }
-        
-        .navigation-branding .main-title {
-            font-weight: 700;
-            text-transform: none;
-            font-size: 25px;
-            font-family: "Amaranth", sans-serif;
-        }
-        
-        @media (max-width: 768px) {
-            .navigation-branding .main-title {
-                font-size: 20px;
-            }
-        }
-        
-        .main-navigation .main-nav ul li a,
-        .menu-toggle,
-        .main-navigation .mobile-bar-items a {
-            transition: line-height 300ms ease
-        }
-        
-        .main-navigation.toggled .main-nav>ul {
-            background-color: #000000
-        }
-        
-        @media (max-width: 768px) {
-            .menu-toggle,
-            .main-navigation .mobile-bar-items a {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-            .main-navigation .main-nav ul li a,
-            .menu-toggle,
-            .main-navigation .mobile-bar-items a {
-                line-height: 50px;
-            }
-            .main-navigation .site-logo.navigation-logo img,
-            .mobile-header-navigation .site-logo.mobile-header-logo img,
-            .navigation-search input {
-                height: 50px;
-            }
-        }
-        
-        @media (max-width:768px) {
-            .footer-widgets {
-                padding-top: 30px;
-                padding-right: 30px;
-                padding-bottom: 30px;
-                padding-left: 30px;
-            }
-        }
-        
-        .post-image,
-        .page-content,
-        .entry-content,
-        .entry-summary,
-        footer.entry-meta {
-            margin-top: 1.6em;
-        }
-        
-        .post-image-above-header .inside-article div.featured-image,
-        .post-image-above-header .inside-article div.post-image {
-            margin-bottom: 1.6em;
-        }
-    </style>
-    <style id="generate-offside-inline-css" type="text/css">
-        .slideout-navigation.main-navigation {
-            background-color: rgba(10, 10, 10, 0.95);
-        }
-        
-        .slideout-navigation.main-navigation .main-nav ul li a {
-            color: #ffffff;
-            font-weight: 200;
-            text-transform: none;
-            font-size: 25px;
-        }
-        
-        .slideout-navigation.main-navigation ul ul {
-            background-color: rgba(0, 0, 0, 0);
-        }
-        
-        .slideout-navigation.main-navigation .main-nav ul ul li a {
-            color: #ffffff;
-            font-size: 24px;
-        }
-        
-        .slideout-navigation.main-navigation .main-nav ul li:hover>a,
-        .slideout-navigation.main-navigation .main-nav ul li:focus>a,
-        .slideout-navigation.main-navigation .main-nav ul li.sfHover>a {
-            background-color: rgba(0, 0, 0, 0);
-        }
-        
-        .slideout-navigation.main-navigation .main-nav ul ul li:hover>a,
-        .slideout-navigation.main-navigation .main-nav ul ul li:focus>a,
-        .slideout-navigation.main-navigation .main-nav ul ul li.sfHover>a {
-            background-color: rgba(0, 0, 0, 0);
-        }
-        
-        .slideout-navigation.main-navigation .main-nav ul li[class*="current-menu-"]>a,
-        .slideout-navigation.main-navigation .main-nav ul li[class*="current-menu-"]>a:hover,
-        .slideout-navigation.main-navigation .main-nav ul li[class*="current-menu-"].sfHover>a {
-            background-color: rgba(0, 0, 0, 0);
-        }
-        
-        .slideout-navigation.main-navigation .main-nav ul ul li[class*="current-menu-"]>a,
-        .slideout-navigation.main-navigation .main-nav ul ul li[class*="current-menu-"]>a:hover,
-        .slideout-navigation.main-navigation .main-nav ul ul li[class*="current-menu-"].sfHover>a {
-            background-color: rgba(0, 0, 0, 0);
-        }
-        
-        .slideout-navigation,
-        .slideout-navigation a {
-            color: #ffffff;
-        }
-        
-        .slideout-navigation button.slideout-exit {
-            color: #ffffff;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        
-        .slide-opened nav.toggled .menu-toggle:before {
-            display: none;
-        }
-    </style>
-    <style id="generate-navigation-branding-inline-css" type="text/css">
-        .navigation-branding img,
-        .site-logo.mobile-header-logo img {
-            height: 52px;
-            width: auto;
-        }
-        
-        .navigation-branding .main-title {
-            line-height: 52px;
-        }
-        
-        @media (max-width: 1110px) {
-            #site-navigation .navigation-branding,
-            #sticky-navigation .navigation-branding {
-                margin-left: 10px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .main-navigation:not(.slideout-navigation) .main-nav {
-                -ms-flex: 0 0 100%;
-                flex: 0 0 100%;
-            }
-            .main-navigation:not(.slideout-navigation) .inside-navigation {
-                -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-            }
-            .nav-aligned-center .navigation-branding,
-            .nav-aligned-left .navigation-branding {
-                margin-right: auto;
-            }
-            .nav-aligned-center .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,
-            .nav-aligned-center .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav,
-            .nav-aligned-left .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,
-            .nav-aligned-left .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav {
-                margin-right: 0px;
-            }
-            .navigation-branding img,
-            .site-logo.mobile-header-logo {
-                height: 50px;
-            }
-            .navigation-branding .main-title {
-                line-height: 50px;
-            }
-        }
-        
-        .p-under-thr-img {
-            margin-top: 80px;
-            display: block;
-        }
-        
-        #und-img {
-            display: block;
-            margin-top: 60px;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <div class="head-photo">
-            <img src="img/background-splash.jpg" alt="">
+            <img src="/img/background-splash.jpg" alt="">
         </div>
         <div class="logo">
-            <a href="index.html"><img src="img/logo.jpg" width="300px" alt=""></a>
+            <a href="index.html"><img src="/img/logo.jpg" width="300px" alt=""></a>
         </div>
         <div class="header_stroke">
             <ul>
@@ -768,7 +90,7 @@
             <div class="top-offers__item" attr-offer-number="2">
                 <div class="top-offers__item__col">
                     <div class="top-offers__item__logo">
-                        <a href="https://www.snapsext.com/" rel="nofollow"><img src="img/snapsext-logo.png" alt="snapsext logo"></a>
+                        <a href="https://www.snapsext.com/" rel="nofollow"><img src="/img/snapsext-logo.png" alt="snapsext logo"></a>
                     </div>
                 </div>
                 <div class="top-offers__item__col">
@@ -808,7 +130,7 @@
             <div class="top-offers__item" attr-offer-number="3">
                 <div class="top-offers__item__col">
                     <div class="top-offers__item__logo">
-                        <a href="https://www.milfplay.com/" rel="nofollow"><img src="img/milfplay-logo.png" alt="milfplay logo"></a>
+                        <a href="https://www.milfplay.com/" rel="nofollow"><img src="/img/milfplay-logo.png" alt="milfplay logo"></a>
                     </div>
                 </div>
                 <div class="top-offers__item__col">
@@ -848,7 +170,7 @@
             <div class="top-offers__item" attr-offer-number="4">
                 <div class="top-offers__item__col">
                     <div class="top-offers__item__logo">
-                        <a href="https://uberhorny.com/" rel="nofollow"><img src="img/uberhorny-logo.png" alt="uberhorny logo"></a>
+                        <a href="https://uberhorny.com/" rel="nofollow"><img src="/img/uberhorny-logo.png" alt="uberhorny logo"></a>
                     </div>
                 </div>
                 <div class="top-offers__item__col">
@@ -888,7 +210,7 @@
             <div class="top-offers__item" attr-offer-number="5">
                 <div class="top-offers__item__col">
                     <div class="top-offers__item__logo">
-                        <a href="https://www.benaughty.com/" rel="nofollow"><img src="img/benaughty.com-logo.png" alt="benaughty logo"></a>
+                        <a href="https://www.benaughty.com/" rel="nofollow"><img src="/img/benaughty.com-logo.png" alt="benaughty logo"></a>
                     </div>
                 </div>
                 <div class="top-offers__item__col">
@@ -1122,7 +444,7 @@
             <p>How to have casual encounters without risking? There are a number of mistakes you might make when you decide to have occasional sex. Once you have met a person on the appropriate sites, you will have to invite them to dinner out and then book
                 a hotel room, since such a meeting has a fairly obvious purpose. But how to pay? Certainly not with a credit card: one of the most dangerous mistakes you can ever make. Because? Why would you give your partner the opportunity to ask for
                 more than one doubt: who were you with? Why is there this payment? What were you doing? Always pay in cash, and always keep a justification that is bombproof.</p>
-            <p><img src="img/sex-dating.jpg" style="float: left" id="thr-img" alt="sex dating" width="390" height="238" class="alignleft size-full wp-image-84" sizes="(max-width: 390px) 100vw, 390px"></p>
+            <p><img src="/img/sex-dating.jpg" style="float: left" id="thr-img" alt="sex dating" width="390" height="238" class="alignleft size-full wp-image-84" sizes="(max-width: 390px) 100vw, 390px"></p>
             <p>As we have already explained to you, the smartphone is an excellent tool for occasional dating sites. Simply because you can use it taking advantage of your privacy, perhaps when you are in the bathroom or in any case protected from prying
                 eyes. So try to avoid fatal errors, even in this case. Specifically, never use your mobile phone when you are at the table or when you are on the sofa with you: least of all when you are in bed since it is very dangerous.</p>
             <p class="p-under-thr-img">Also in this case be sure to delete every track from the device: don’t save spicy messages, don’t save passwords, and always block it with a secure PIN. Obviously keep it handy and, in doubt, never leave it unattended. In case your partner
@@ -1134,6 +456,25 @@
             <p>Furthermore, let curiosity guide you: do not limit yourself to a type of person, but broaden your horizons and do not deny yourself the knowledge of men or women of different ethnicity, culture or social background.</p>
             <p>And when the meeting is not successful, because maybe you did not like yourself physically, not bad: take advantage of the opportunity to establish a friendship, which could then lead you to other acquaintances.</p>
         </div>
+        <div id="cookie">
+            <div class="cookie-text">
+                <p>Our site collect cookie, if you agree to collect cookie, click button right</p>
+            </div>
+            <div class="cookie-btt"><input type="button" id="cookie-btt" value="I AGREE"></div>
+        </div>
+        <script>
+            let cook = document.getElementById('cookie-btt');
+            let cookBlock = document.getElementById('cookie')
+            if (!document.cookie.includes(click = true)) {
+                cook.addEventListener('click', function() {
+                    document.cookie = 'click=true';
+                    cookBlock.style.display = 'none';
+                })
+            } else {
+                cookBlock.style.display = 'none'
+            }
+        </script>
+
 </body>
 
 </html>

@@ -975,6 +975,25 @@
             <p>Furthermore, let curiosity guide you: do not limit yourself to a type of person, but broaden your horizons and do not deny yourself the knowledge of men or women of different ethnicity, culture or social background.</p>
             <p>And when the meeting is not successful, because maybe you did not like yourself physically, not bad: take advantage of the opportunity to establish a friendship, which could then lead you to other acquaintances.</p>
         </div>
+        <div id="cookie">
+            <div class="cookie-text">
+                <p>Our site collect cookie, if you agree to collect cookie, click button right</p>
+            </div>
+            <div class="cookie-btt"><input type="button" id="cookie-btt" value="I AGREE"></div>
+        </div>
+        <script>
+            let cook = document.getElementById('cookie-btt');
+            let cookBlock = document.getElementById('cookie')
+            if (!document.cookie.includes(click = true)) {
+                cook.addEventListener('click', function() {
+                    document.cookie = 'click=true';
+                    cookBlock.style.display = 'none';
+                })
+            } else {
+                cookBlock.style.display = 'none'
+            }
+        </script>
+
 </body>
 
 </html>
