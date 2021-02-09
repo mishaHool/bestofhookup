@@ -1,0 +1,354 @@
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    width: 1511px;
+    margin: auto;
+    position: relative;
+}
+
+.head-photo img {
+    width: 1400px;
+    margin-top: 110px;
+}
+
+.header_stroke {
+    width: 1530px;
+    background-color: #4d4d4d;
+    height: 30px;
+    position: absolute;
+    margin-left: -20px !important;
+    top: 150px;
+    opacity: 1;
+    color: #FFCC00 !important;
+}
+
+.header_stroke a {
+    color: #FFCC00 !important;
+}
+
+.header_stroke a:hover {
+    color: #FFCC00;
+}
+
+.header_stroke ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media(max-width: 750px) {
+    .header_stroke {
+        width: 403%;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.entry-content {
+    width: 1530px;
+    margin: auto;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.top-offers__item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 1120px;
+    color: black;
+}
+
+.top-offers__item__name {
+    font-weight: 700;
+}
+
+.top-offers {
+    width: 1511px;
+    margin-left: 180px;
+}
+
+.top-offers__item__col:nth-child(2) {
+    border-left: 1px solid black;
+    padding-left: 70px;
+    border-right: 1px solid black;
+    padding-right: 25px;
+}
+
+.top-offers__item__col:nth-child(3) {
+    border-right: 1px solid black;
+    height: 63px;
+    padding-right: 20px;
+}
+
+.top-offers__item__buttons__button {
+    font-weight: 400;
+    text-transform: none;
+    font-family: "Amaranth", sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #c4c4c4;
+    text-align: center;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.btn-visit-site {
+    font-weight: 400;
+    text-transform: none;
+    font-family: "Amaranth", sans-serif;
+    line-height: 1.7;
+    border: 0;
+    margin: 0;
+    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #201f1d;
+    color: #5ddee8;
+    padding: 10px 15px;
+    width: 170px;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 22px;
+}
+
+.top-offers__item__buttons {
+    font-size: 19px;
+    line-height: 1.7;
+    font-family: 'Amaranth', sans-serif;
+    color: black;
+}
+
+.btn-sign-up {
+    font-weight: 400;
+    text-transform: none;
+    font-family: "Amaranth", sans-serif;
+    line-height: 1.7;
+    border: 0;
+    margin: 0;
+    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #5ddee8;
+    color: #201f1d;
+    padding: 10px 15px;
+    width: 170px;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 22px;
+}
+
+.top-offers__item__rating__score {
+    margin-top: 14px;
+    margin-left: -70px;
+}
+
+.top-offers__item:first-child::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 100px solid red;
+    border-right: 100px solid transparent;
+    top: 0px;
+    left: 0px;
+}
+
+.top-offers__item:first-child::before {
+    content: attr(attr-offer-number);
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    z-index: 1;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.top-offers__item::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 70px solid #000000;
+    border-right: 70px solid transparent;
+    top: 0px;
+    left: 0px;
+}
+
+.top-offers__item::before {
+    content: attr(attr-offer-number);
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    z-index: 1;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.top-offers__item__rating__stars__star .img-star {
+    background: url(/img/star.svg) center no-repeat;
+    background-size: cover;
+    width: 17px;
+    height: 16px;
+}
+
+.top-offers__item__rating {
+    font-weight: 400;
+    text-transform: none;
+    font-family: "Amaranth", sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #c4c4c4;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 15px 6px;
+    border: 1px solid #201f1d;
+    border-radius: 40px;
+    width: 190px;
+    margin-left: -70px;
+}
+
+.top-offers__item__rating__stars {
+    font-weight: 400;
+    text-transform: none;
+    font-family: "Amaranth", sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #c4c4c4;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-offers__item__rating__score {
+    text-transform: none;
+    font-family: "Amaranth", sans-serif;
+    line-height: 1.7;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    color: #201f1d;
+    font-size: 20px;
+    margin-left: 18px;
+}
+
+.main,
+#fst-p {
+    color: rgb(196, 196, 196);
+    text-align: justify;
+    font-size: 19px;
+    width: 1250px;
+    margin: auto;
+}
+
+strong {
+    color: white !important;
+}
+
+#fst-img {
+    float: right;
+    margin-left: 10px;
+}
+
+@media (max-width: 748px) {
+    header {
+        width: 230%;
+    }
+    .head-photo img {
+        width: 190%;
+    }
+    .header_stroke {
+        width: 192%;
+        height: 63px;
+    }
+    .header_stroke ul {
+        font-size: 40px;
+    }
+    .main,
+    #fst-p {
+        font-size: 44px !important;
+    }
+    h1 {
+        font-size: 66px !important;
+    }
+    .entry-content {
+        margin-left: -2%;
+    }
+    h2 {
+        font-size: 50px !important;
+    }
+    h3 {
+        font-size: 40px !important;
+    }
+    .logo img {
+        width: 470px;
+    }
+    .top-offers {
+        margin-left: 120px;
+    }
+    .top-offers__item {
+        width: 1220px;
+        font-size: 40px !important;
+    }
+    .top-offers__item__rating__score {
+        font-size: 30px;
+    }
+    #sec-img {
+        margin-left: 120px;
+    }
+    #thr-img {
+        float: left;
+    }
+    .p-under-thr-img {
+        margin-top: 80px;
+        display: block;
+    }
+    #und-img {
+        display: block;
+        margin-top: 60px;
+    }
+}

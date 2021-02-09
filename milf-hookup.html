@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css1.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+    <style id="generate-style-inline-css" type="text/css">
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        
+        a,
+        a:visited {
+            color: #ffffff;
+        }
+        
+        a:hover,
+        a:focus,
+        a:active {
+            color: #5ddee8;
+        }
+        
+        body .grid-container {
+            max-width: 1100px;
+        }
+        
+        .wp-block-group__inner-container {
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: "Amaranth", sans-serif;
+            font-size: 19px;
+        }
+        
+        body {
+            line-height: 1.7;
+        }
+        
+        p {
+            margin-bottom: 1.2em;
+        }
+        
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.2em;
+        }
+        
+        .main-title {
+            font-family: "Amaranth", sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        
+        .main-navigation a,
+        .menu-toggle {
+            font-family: "PT Sans Narrow", sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+        
+        .main-navigation .main-nav {
+            font-size: 15px;
+        }
+        
+        .widget-title {
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-family: "Amaranth", sans-serif;
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 0.8em;
+            margin-bottom: 54px;
+            width: 1250px;
+            margin: auto;
+        }
+        
+        h2 {
+            font-family: "Amaranth", sans-serif;
+            font-weight: 600;
+            font-size: 33px;
+        }
+        
+        h3 {
+            font-family: "Amaranth", sans-serif;
+            font-weight: 600;
+            font-size: 28px;
+        }
+        
+        .site-info {
+            font-size: 16px;
+        }
+        
+        @media (max-width:768px) {
+            .main-title {
+                font-size: 20px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 25px;
+            }
+        }
+        
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+        
+        .top-bar a,
+        .top-bar a:visited {
+            color: #ffffff;
+        }
+        
+        .top-bar a:hover {
+            color: #303030;
+        }
+        
+        .site-header {
+            background-color: #ffffff;
+            color: #3a3a3a;
+        }
+        
+        .site-header a,
+        .site-header a:visited {
+            color: #3a3a3a;
+        }
+        
+        .main-title a,
+        .main-title a:hover,
+        .main-title a:visited {
+            color: #ffffff;
+        }
+        
+        .site-description {
+            color: #757575;
+        }
+        
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #000000;
+        }
+        
+        .main-navigation .main-nav ul li a,
+        .menu-toggle {
+            color: #ffffff;
+        }
+        
+        .main-navigation .main-nav ul li:hover>a,
+        .main-navigation .main-nav ul li:focus>a,
+        .main-navigation .main-nav ul li.sfHover>a {
+            color: #5ddee8;
+            background-color: #000000;
+        }
+        
+        button.menu-toggle:hover,
+        button.menu-toggle:focus,
+        .main-navigation .mobile-bar-items a,
+        .main-navigation .mobile-bar-items a:hover,
+        .main-navigation .mobile-bar-items a:focus {
+            color: #ffffff;
+        }
+        
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #5ddee8;
+            background-color: #000000;
+        }
+        
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a:hover,
+        .main-navigation .main-nav ul li[class*="current-menu-"].sfHover>a {
+            color: #5ddee8;
+            background-color: #000000;
+        }
+        
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a {
+            color: #5ddee8;
+            background-color: #000000;
+        }
+        
+        .main-navigation ul ul {
+            background-color: #3f3f3f;
+        }
+        
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+        
+        .main-navigation .main-nav ul ul li:hover>a,
+        .main-navigation .main-nav ul ul li:focus>a,
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a:hover,
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            color: #c4c4c4;
+            background-color: #201f1d;
+        }
+        
+        .inside-article a,
+        .inside-article a:visited,
+        .paging-navigation a,
+        .paging-navigation a:visited,
+        .comments-area a,
+        .comments-area a:visited,
+        .page-header a,
+        .page-header a:visited {
+            color: #ffffff;
+        }
+        
+        .inside-article a:hover,
+        .paging-navigation a:hover,
+        .comments-area a:hover,
+        .page-header a:hover {
+            color: #5ddee8;
+        }
+        
+        .entry-title a,
+        .entry-title a:visited {
+            color: #ffffff;
+        }
+        
+        .entry-title a:hover {
+            color: #5ddee8;
+        }
+        
+        .entry-meta {
+            color: #ffffff;
+        }
+        
+        .entry-meta a,
+        .entry-meta a:visited {
+            color: #ffffff;
+        }
+        
+        .entry-meta a:hover {
+            color: #5ddee8;
+        }
+        
+        h1 {
+            color: #ffffff;
+        }
+        
+        h2 {
+            color: #ffffff;
+        }
+        
+        h3 {
+            color: #ffffff;
+        }
+        
+        .sidebar .widget {
+            background-color: #201f1d;
+        }
+        
+        .sidebar .widget .widget-title {
+            color: #ffffff;
+        }
+        
+        .footer-widgets {
+            background-color: #000000;
+        }
+        
+        .footer-widgets a,
+        .footer-widgets a:visited {
+            color: #ffffff;
+        }
+        
+        .footer-widgets a:hover {
+            color: #5ddee8;
+        }
+        
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+        
+        .site-info {
+            color: #ffffff;
+            background-color: #000000;
+        }
+        
+        .site-info a,
+        .site-info a:visited {
+            color: #ffffff;
+        }
+        
+        .site-info a:hover {
+            color: #606060;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #c9c9c9;
+            background-color: #424242;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #c9c9c9;
+            background-color: #424242;
+            border-color: #bfbfbf;
+        }
+        
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.button:visited,
+        a.wp-block-button__link:not(.has-background) {
+            color: #5ddee8;
+            background-color: #201f1d;
+        }
+        
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #201f1d;
+            background-color: #5ddee8;
+        }
+        
+        .generate-back-to-top,
+        .generate-back-to-top:visited {
+            background-color: rgba( 0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+        
+        .generate-back-to-top:hover,
+        .generate-back-to-top:focus {
+            background-color: rgba( 0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+        
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+        
+        .separate-containers .widget,
+        .separate-containers .site-main>*,
+        .separate-containers .page-header,
+        .widget-area .main-navigation {
+            margin-bottom: 23px;
+        }
+        
+        .separate-containers .site-main {
+            margin: 23px;
+        }
+        
+        .both-right.separate-containers .inside-left-sidebar {
+            margin-right: 11px;
+        }
+        
+        .both-right.separate-containers .inside-right-sidebar {
+            margin-left: 11px;
+        }
+        
+        .both-left.separate-containers .inside-left-sidebar {
+            margin-right: 11px;
+        }
+        
+        .both-left.separate-containers .inside-right-sidebar {
+            margin-left: 11px;
+        }
+        
+        .separate-containers .page-header-image,
+        .separate-containers .page-header-contained,
+        .separate-containers .page-header-image-single,
+        .separate-containers .page-header-content-single {
+            margin-top: 23px;
+        }
+        
+        .separate-containers .inside-right-sidebar,
+        .separate-containers .inside-left-sidebar {
+            margin-top: 23px;
+            margin-bottom: 23px;
+        }
+        
+        .main-navigation .main-nav ul li a,
+        .menu-toggle,
+        .main-navigation .mobile-bar-items a {
+            padding-left: 30px;
+            padding-right: 30px;
+            line-height: 52px;
+        }
+        
+        .main-navigation .main-nav ul ul li a {
+            padding: 10px 30px 10px 30px;
+        }
+        
+        .navigation-search input {
+            height: 52px;
+        }
+        
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 30px;
+        }
+        
+        .menu-item-has-children .dropdown-menu-toggle {
+            padding-right: 30px;
+        }
+        
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 30px;
+        }
+        
+        .site-info {
+            padding: 10px;
+        }
+        
+        @media (max-width:768px) {
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header,
+            .wp-block-group__inner-container {
+                padding: 30px;
+            }
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+        }
+        
+        .one-container .sidebar .widget {
+            padding: 0px;
+        }
+        /* End cached CSS */
+        
+        @media (max-width: 768px) {
+            .main-navigation .menu-toggle,
+            .main-navigation .mobile-bar-items,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+            .main-navigation ul,
+            .gen-sidebar-nav {
+                display: none;
+            }
+            [class*="nav-float-"] .site-header .inside-header>* {
+                float: none;
+                clear: both;
+            }
+        }
+        
+        button.menu-toggle:before,
+        .search-item a:before,
+        .dropdown-menu-toggle:before,
+        .cat-links:before,
+        .tags-links:before,
+        .comments-link:before,
+        .nav-previous .prev:before,
+        .nav-next .next:before,
+        .generate-back-to-top:before {
+            display: none;
+        }
+        
+        .navigation-branding .main-title {
+            font-weight: 700;
+            text-transform: none;
+            font-size: 25px;
+            font-family: "Amaranth", sans-serif;
+        }
+        
+        @media (max-width: 768px) {
+            .navigation-branding .main-title {
+                font-size: 20px;
+            }
+        }
+        
+        .main-navigation .main-nav ul li a,
+        .menu-toggle,
+        .main-navigation .mobile-bar-items a {
+            transition: line-height 300ms ease
+        }
+        
+        .main-navigation.toggled .main-nav>ul {
+            background-color: #000000
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle,
+            .main-navigation .mobile-bar-items a {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .main-navigation .main-nav ul li a,
+            .menu-toggle,
+            .main-navigation .mobile-bar-items a {
+                line-height: 50px;
+            }
+            .main-navigation .site-logo.navigation-logo img,
+            .mobile-header-navigation .site-logo.mobile-header-logo img,
+            .navigation-search input {
+                height: 50px;
+            }
+        }
+        
+        @media (max-width:768px) {
+            .footer-widgets {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+        }
+        
+        .post-image,
+        .page-content,
+        .entry-content,
+        .entry-summary,
+        footer.entry-meta {
+            margin-top: 1.6em;
+        }
+        
+        .post-image-above-header .inside-article div.featured-image,
+        .post-image-above-header .inside-article div.post-image {
+            margin-bottom: 1.6em;
+        }
+    </style>
+    <style id="generate-offside-inline-css" type="text/css">
+        .slideout-navigation.main-navigation {
+            background-color: rgba(10, 10, 10, 0.95);
+        }
+        
+        .slideout-navigation.main-navigation .main-nav ul li a {
+            color: #ffffff;
+            font-weight: 200;
+            text-transform: none;
+            font-size: 25px;
+        }
+        
+        .slideout-navigation.main-navigation ul ul {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .slideout-navigation.main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+            font-size: 24px;
+        }
+        
+        .slideout-navigation.main-navigation .main-nav ul li:hover>a,
+        .slideout-navigation.main-navigation .main-nav ul li:focus>a,
+        .slideout-navigation.main-navigation .main-nav ul li.sfHover>a {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .slideout-navigation.main-navigation .main-nav ul ul li:hover>a,
+        .slideout-navigation.main-navigation .main-nav ul ul li:focus>a,
+        .slideout-navigation.main-navigation .main-nav ul ul li.sfHover>a {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .slideout-navigation.main-navigation .main-nav ul li[class*="current-menu-"]>a,
+        .slideout-navigation.main-navigation .main-nav ul li[class*="current-menu-"]>a:hover,
+        .slideout-navigation.main-navigation .main-nav ul li[class*="current-menu-"].sfHover>a {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .slideout-navigation.main-navigation .main-nav ul ul li[class*="current-menu-"]>a,
+        .slideout-navigation.main-navigation .main-nav ul ul li[class*="current-menu-"]>a:hover,
+        .slideout-navigation.main-navigation .main-nav ul ul li[class*="current-menu-"].sfHover>a {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .slideout-navigation,
+        .slideout-navigation a {
+            color: #ffffff;
+        }
+        
+        .slideout-navigation button.slideout-exit {
+            color: #ffffff;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        .slide-opened nav.toggled .menu-toggle:before {
+            display: none;
+        }
+    </style>
+    <style id="generate-navigation-branding-inline-css" type="text/css">
+        .navigation-branding img,
+        .site-logo.mobile-header-logo img {
+            height: 52px;
+            width: auto;
+        }
+        
+        .navigation-branding .main-title {
+            line-height: 52px;
+        }
+        
+        @media (max-width: 1110px) {
+            #site-navigation .navigation-branding,
+            #sticky-navigation .navigation-branding {
+                margin-left: 10px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-navigation:not(.slideout-navigation) .main-nav {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+            }
+            .main-navigation:not(.slideout-navigation) .inside-navigation {
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+            .nav-aligned-center .navigation-branding,
+            .nav-aligned-left .navigation-branding {
+                margin-right: auto;
+            }
+            .nav-aligned-center .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,
+            .nav-aligned-center .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav,
+            .nav-aligned-left .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,
+            .nav-aligned-left .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav {
+                margin-right: 0px;
+            }
+            .navigation-branding img,
+            .site-logo.mobile-header-logo {
+                height: 50px;
+            }
+            .navigation-branding .main-title {
+                line-height: 50px;
+            }
+        }
+        
+        .p-under-thr-img {
+            margin-top: 80px;
+            display: block;
+        }
+        
+        #und-img {
+            display: block;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head-photo">
+            <img src="img/background-splash.jpg" alt="">
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.jpg" width="300px" alt=""></a>
+        </div>
+        <div class="header_stroke">
+            <ul>
+                <a href="adult-dating.html">
+                    <li>Adult Dating</li>
+                </a>
+                <a href="webcam.html">
+                    <li>Webcam</li>
+                </a>
+                <a href="bisexual-hookup.html">
+                    <li>Bisexual Hookup</li>
+                </a>
+                <a href="gay-hookup.html">
+                    <li>Gay Hookup</li>
+                </a>
+                <a href="lesbian-hookup.html">
+                    <li>Lesbian Hookup</li>
+                </a>
+                <a href="milf-hookup.html">
+                    <li>Milf Hookup</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <div class="entry-content" itemprop="text">
+        <h1>Best Hookup Sites</h1>
+        <p id="fst-p">Today we often hear about the Internet as a world of great opportunities: it is used to shop online, to look for work, to play and to get informed. So why not use it to <b>find hookup sites</b>?</p>
+        <div class="top-offers">
+            <div class="top-offers__item" attr-offer-number="1">
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__logo">
+                        <a href="https://www.fling.com/" rel="nofollow"><img src="/img/fling-logo.png" alt="fling logo"></a>
+                    </div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__name">Fling.com</div>
+                    <div class="top-offers__item__description">Best Hookup Site</div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__rating">
+                        <div class="top-offers__item__rating__stars">
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                        </div>
+                        <div class="top-offers__item__rating__score">5.0</div>
+                    </div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__buttons">
+                        <div class="top-offers__item__buttons__button">
+                            <a href="https://www.fling.com/" rel="nofollow" class="btn-visit-site">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-offers__item" attr-offer-number="2">
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__logo">
+                        <a href="https://www.snapsext.com/" rel="nofollow"><img src="img/snapsext-logo.png" alt="snapsext logo"></a>
+                    </div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__name">Snapsext</div>
+                    <div class="top-offers__item__description">Easiest Hookups</div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__rating">
+                        <div class="top-offers__item__rating__stars">
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                        </div>
+                        <div class="top-offers__item__rating__score">4.7</div>
+                    </div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__buttons">
+                        <div class="top-offers__item__buttons__button">
+                            <a href="https://www.snapsext.com/" rel="nofollow" class="btn-visit-site">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-offers__item" attr-offer-number="3">
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__logo">
+                        <a href="https://www.milfplay.com/" rel="nofollow"><img src="img/milfplay-logo.png" alt="milfplay logo"></a>
+                    </div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__name">MILFplay</div>
+                    <div class="top-offers__item__description">Best MILF Site</div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__rating">
+                        <div class="top-offers__item__rating__stars">
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                        </div>
+                        <div class="top-offers__item__rating__score">4.8</div>
+                    </div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__buttons">
+                        <div class="top-offers__item__buttons__button">
+                            <a href="https://www.milfplay.com/" rel="nofollow" class="btn-visit-site">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-offers__item" attr-offer-number="4">
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__logo">
+                        <a href="https://uberhorny.com/" rel="nofollow"><img src="img/uberhorny-logo.png" alt="uberhorny logo"></a>
+                    </div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__name">Uberhorny</div>
+                    <div class="top-offers__item__description">Hot and Active Users</div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__rating">
+                        <div class="top-offers__item__rating__stars">
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                            <div class="top-offers__item__rating__stars__star">
+                                <div class="img-star"></div>
+                            </div>
+                        </div>
+                        <div class="top-offers__item__rating__score">4.9</div>
+                    </div>
+                </div>
+                <div class="top-offers__item__col">
+                    <div class="top-offers__item__buttons">
+                        <div class="top-offers__item__buttons__button">
+                            <a href="https://uberhorny.com/" rel="nofollow" class="btn-visit-site">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="main">
+            <p>There are several portals (and you can find them on the list of team-tested <b>best hookup sites</b>) that can potentially put you in contact with thousands of men and women who betray your husband, of all ages and with any sexual preference.</p>
+            <p>On the other hand, this is certainly not a novelty, nor is it our discovery: the web is a real container of potential partners scattered around a bazillion of hookup sites. But there are some aspects that you need to know before launching
+                in search of these opportunities: this is why today we will see to study in detail how the occasional online meetings work, and how you can achieve success in the world of adult dating, even with using free hookup sites.</p>
+            <h2>Who Uses Hookup Sites?</h2>
+            <p>People want occasional meetings sometimes to break the routine of their couple life, obviously without letting their partner know and sometimes even being single because they don’t want to have any strings attached, but only a night or a few
+                hours of sex. In this article we will not focus on the ethical aspect: there is nothing right or wrong. There are only facts. If you think that the time has come for you to try extramarital and occasional encounters, the net is the perfect
+                sea from which to fish tons of prey and the merit is of the <b>sex sites</b> created specifically for this kind of dating.</p>
+            <p><img src="/img/real-girl-on-hookup-site.jpg" id="fst-img" alt="real girl on hookup site" width="290" height="570" class="alignright size-full wp-image-80" sizes="(max-width: 290px) 100vw, 290px"></p>
+            <p>Why use adult dating sites? First of all, because they are anonymous and allow you not to be traced: if you are trying to “stay under the radar”, this must be your first concern. In addition, a website of this type is also ideal for having
+                extramarital encounters and works perfectly for busy people: it is only about sex, without any kind of commitment, and you are sure that in these platforms you will find only partners interested like you, in the “hit and go”, but the main
+                thing is that all members want the same thing and in this way you lose much less time in <b>finding what you are looking for</b>.</p>
+            <p>The real hookup websites are aimed exclusively at a target who <b>wants to have sex</b>, and who does not want any commitment in terms of stable relationships and feelings. Unlike dating sites and chats for serious singles, therefore, these
+                platforms only meet users who want to spend a night of passion, without ties and without “promises of the next day”.</p>
+            <p>Even if we still talk about singles, the goals change a lot: in the first case, the aim is to try to create a lasting relationship, perhaps oriented towards engagement or marriage. In the second case, however, they are used only to do activities
+                between the sheets.</p>
+            <p><strong>Is it a matter of age?</strong></p>
+            <p id="und-img">Absolutely not, because anyone can register on these sites to look for a man or woman to have very simple sex, therefore with the aim of the classic hit and go. On the other hand, it is obvious that in most cases these portals are used by
+                young people.
+            </p>
+            <p>It’s a matter of life goals because the more the years go up, the more individuals feel the need to find a stable partner. To put it plainly, it is very rare to find great people, since they rather prefer to use dating sites over 50. However,
+                as mentioned, no one prevents you from trying your luck, and to see if users with more advanced age are also found on these platforms.</p>
+            <p><strong>Is it a matter of sexual preference?</strong></p>
+            <p>Again, the answer is as follows: no, quite the opposite. The dating sites for adults, in fact, respond mainly to purely sexual needs, therefore they meet a myriad of preferences.</p>
+            <p>Not surprisingly, on the web there are also several portals designed for online gay dating, for lesbians, for transsexuals and much more. As a result, whatever your sexual orientation, you can be sure of finding many options on the Internet
+                that are suitable for your desires.</p>
+            <h2>Which Adult Dating Sites are the Best?</h2>
+            <p>If you have never had the opportunity to try adult dating, you don’t have to worry: they are very easy to use. All you have to do is register, create a profile, fill it in with the required information and start looking for a man or woman
+                for your <b>meetings without obligation</b>. For example, you can enter physical characteristics such as height and color of the eyes, your hobbies, your sexual preferences and much more. You can also add a photo (maybe without framing
+                your face if you want to remain anonymous).</p>
+            <p><img src="/img/hookup-woman.jpg" id="sec-img" alt="hookup woman" width="1000" height="412" class="aligncenter size-full wp-image-77" sizes="(max-width: 1000px) 100vw, 1000px"></p>
+            <p>But before starting, there is this thing you need to decide: whether or not you are prepared to pay for your digital dating experience. The best sites for extramarital and occasional encounters are almost never free: not the quality ones,
+                at least that give a certain guarantee of making live encounters.</p>
+            <p>They may be free only for women, while men must always subscribe to be able to use all the functions of the platform. If you don’t, you won’t be able to contact others, but you will have to wait to be contacted: this means losing many opportunities.
+                It is a small price for efficient service.</p>
+            <h2>How to Avoid Scam When Using Hookup Dating Sites?</h2>
+            <p>The fact that these sites are really safe, does not authorize you to commit imprudences. Remember that occasional encounters are risky regardless, but after all the beauty is also this, isn’t it?</p>
+            <p>If you want to increase your chances of having hookup experiences for a long time, without being discovered, you will have to be good at specializing in the secrecy of your meetings especially if you are busy. That’s why you’ll need some advice.
+                First of all, use technology with judgment: always change the passwords of your PC and your accounts, never leave clues on your computer, and delete any trace by always deleting the browser cache.</p>
+            <p>For example, using a notebook is much smarter than using a desktop PC, and never use the notebook of your partner or children. Even better if you use your smartphone, considering that many of these casual dating sites are also mobile-friendly.</p>
+            <h3>Are All Hookup Sites from Our Top Real?</h3>
+            <p>The purpose of our professionally crafted reviews for sex platforms is to help you <b>find real hookup sites</b> where you will get laid with a guarantee – it is only a matter of time, and possibly some luck. We take the second-guessing out
+                of the equation for you by collecting the information about multiple sex dating platforms and sieving through them, to only recommend the tried-and-true websites that are for real.</p>
+            <h3>How We Reviewing Popular Sites for Sex Dating?</h3>
+            <p>The purpose of our service is to help you find the most reliable and efficient adult dating websites. Leaf through our professionally composed reviews for every site, and you will find that this will save you a lot of money, efforts, and time
+                down the road.</p>
+            <p>We base our reviews on the most vital criteria: the cost, the value, the efficacy in finding a partner and the ease with which it can be done, number of female users (there is never a shortage of mails, sigh!), features, safety, messaging
+                system, and much more. Before you even sign up for a service, you will have a perfect idea of what it is about.</p>
+            <h2>The Pros and Cons of the Best Hookup Sites</h2>
+            <p>Adult dating sites pros:</p>
+            <ol>
+                <li><b>You meet like-minded people easily.</b> You can be sure that whoever you meet here is looking for the same thing as you are, which is a hot sex session and no strings attached. This is what gives adult dating sites an advantage over
+                    general purpose apps where you can initiate a chat with someone only to find out they are looking for a flirt, a chat buddy or a long-term commitment.</li>
+                <li><b>Increased anonymity.</b> Although confidentiality is what you gain using adult websites, it depends to the kind of site you use. Gravitate towards the ones that have been professionally tested or at least reviewed favorably by your
+                    fellow-members in order to steer clear from scams and unscrupulous platforms with poor user data protection protocols.</li>
+                <li><b>You have enough room to get comfortable around the idea.</b> If you are a rookie and only would like to have a look around, a sex chat will help you ease into the environment, and give you a clear idea as to your own preferences and
+                    wants. No harm, no fowl if you feel like changing the course of your action at some point, just make sure to bring the other participants on board and respect someone else’s time.</li>
+            </ol>
+            <p>Adult dating sites cons:</p>
+            <ol>
+                <li><b>We don’t really know who’s on the other side (and most likely, in hindsight we wouldn’t want to have found out).</b> We do not intend here to open a treaty on real risks and dangers associated with chat meetings. Not because the problem
+                    does not exist, quite the opposite, but there are authoritative sources that speak about it and I rely on your awareness and intelligence. We refer rather to the fact in chat we all show the best part of us: the most photoshopped selfie,
+                    falsified life facts that can affect how you perceive the occasional hookup partner, etc. We reinvent ourselves a character that takes its cue from our true self but borders on the other. And conversations, of course, are never completely
+                    natural. The bottom line is, even if they are not using a fake profile pic, it might be old and no longer reflecting the actual state of things, because it was taken a dozen of Ben&amp;Jerry’s pints ago.</li>
+                <li><b>They might not actually follow through with the date or flake out during the date.</b> Dating sites and chats have an unparalleled superpower: they create a sense of potential that might not be there. And while, united by the same purpose,
+                    you still can find a lay, if you are a guy, chances are you will find it more difficult to find one. Ladies out there may change their mind and not put out during the date, even if they actually show up, or there may be no chemistry.
+                    Either way, just calibrate your expectations before you get underwhelmed. It pays to remember that even though anticlimax happens, so does climaxing – there’s many fish in the sea or adult dating sites.</li>
+                <li><b>We take refuge in an unreal world and shut everything else out.</b> You still should not rely entirely on the sites for hookups. Although useful tools, they work best as a part in your sex game, so make sure to still go out and hop
+                    some bars, clubs and gyms looking for your next partner in a steaming hookup sesh.</li>
+            </ol>
+            <h2>Tips from Our Experts when Hookup Online</h2>
+            <p>How to have casual encounters without risking? There are a number of mistakes you might make when you decide to have occasional sex. Once you have met a person on the appropriate sites, you will have to invite them to dinner out and then book
+                a hotel room, since such a meeting has a fairly obvious purpose. But how to pay? Certainly not with a credit card: one of the most dangerous mistakes you can ever make. Because? Why would you give your partner the opportunity to ask for
+                more than one doubt: who were you with? Why is there this payment? What were you doing? Always pay in cash, and always keep a justification that is bombproof.</p>
+            <p><img src="img/sex-dating.jpg" style="float: left" id="thr-img" alt="sex dating" width="390" height="238" class="alignleft size-full wp-image-84" sizes="(max-width: 390px) 100vw, 390px"></p>
+            <p>As we have already explained to you, the smartphone is an excellent tool for occasional dating sites. Simply because you can use it taking advantage of your privacy, perhaps when you are in the bathroom or in any case protected from prying
+                eyes. So try to avoid fatal errors, even in this case. Specifically, never use your mobile phone when you are at the table or when you are on the sofa with you: least of all when you are in bed since it is very dangerous.</p>
+            <p class="p-under-thr-img">Also in this case be sure to delete every track from the device: don’t save spicy messages, don’t save passwords, and always block it with a secure PIN. Obviously keep it handy and, in doubt, never leave it unattended. In case your partner
+                should pinch you, asking you what you are doing, suddenly: maybe you can tell him that you were playing or that you were checking the work email.</p>
+            <p>There are other details that would be good for you to know before starting your adventure in free sex. In the meantime, never unbalance yourself at the beginning: you know a person but keep your personal data for yourself, such as the surname
+                and of course the address of your home.</p>
+            <p>Never give out your primary phone number, but always use a secondary SIM card. Organize your sex dates away from home, or from the areas where people who know you live. Then, you must also be an easy-going person: you will meet and talk to
+                very different people, therefore you will have to adapt to every situation and never lose your desire to meet a man or a woman.</p>
+            <p>Furthermore, let curiosity guide you: do not limit yourself to a type of person, but broaden your horizons and do not deny yourself the knowledge of men or women of different ethnicity, culture or social background.</p>
+            <p>And when the meeting is not successful, because maybe you did not like yourself physically, not bad: take advantage of the opportunity to establish a friendship, which could then lead you to other acquaintances.</p>
+        </div>
+</body>
+
+</html>
